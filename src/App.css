@@ -1,27 +1,72 @@
 .App {
   text-align: center;
 }
- 
+
 body {
-  background-color: #ECF0F1;
+  background-color: #080710;
 }
 
 .page-login {
-  display: flex;
-  justify-content: center;
-  margin: 20px 50px 50px 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
 }
-.ui_form{
-  background-color:white;
-  margin: 60px;
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 5%;
+.ui_form {
+  height: 400px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0, 0, 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+.ui_form * {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.ui_form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 90px;
   text-align: center;
 }
-.field{
-  padding: 10px;
+input {
+  display: block;
+  height: 50px;
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+  padding: 0 4px;
+  padding-left: 14px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+
 }
-input{
-  padding: 4px;
+::placeholder {
+  color: #e5e5e5;
+}
+.ui_primary_labeled_icon_button {
+  margin-top: 5%;
+  width: 100%;
+  background-color: #9fcaf1;
+  color: #080710;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
 }
