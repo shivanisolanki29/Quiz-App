@@ -15,7 +15,13 @@ const handleChange =(e) =>{
 const handleSubmit =(e) =>{
     e.preventDefault();
     // if(validate())
-    console.log(values)
+    // console.log(values)
+    fetch('http://localhost:5082/api/Participant',{
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(values)})
+    .then(res=> console.log(res))
+    .catch(err => console.log (err))
 }
 
 // const validate =() =>{
@@ -59,6 +65,7 @@ const handleSubmit =(e) =>{
           </button>
         </form>
       </div>
+    
     </>
   );
 };
